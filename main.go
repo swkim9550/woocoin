@@ -1,7 +1,10 @@
 package main
 
-import "woocoin/rest"
+import (
+	"woocoin/blockchain"
+)
 
 func main() {
-	rest.Start(4000)
+	blockchain.Blockchain()
+	//rest.Start(4000)
 }
