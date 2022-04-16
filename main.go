@@ -1,11 +1,11 @@
 package main
 
 import (
-	"woocoin/blockchain"
 	"woocoin/cli"
+	"woocoin/db"
 )
 
 func main() {
-	blockchain.Blockchain()
+	defer db.Close() //defer main 함수종료시 실행됨
 	cli.Start()
 }
