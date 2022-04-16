@@ -2,9 +2,10 @@ package main
 
 import (
 	"woocoin/blockchain"
+	"woocoin/cli"
 )
 
 func main() {
 	blockchain.Blockchain()
-	//rest.Start(4000)
+	cli.Start()
 }
